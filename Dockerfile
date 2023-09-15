@@ -1,9 +1,6 @@
 from ubuntu:18.04
 
 WORKDIR backend-svr
-RUN sudo groupadd docker
-RUN sudo gpasswd -a $USER docker
-RUN newgrp docker
 
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
