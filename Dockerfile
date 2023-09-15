@@ -32,3 +32,4 @@ RUN dotnet build
 EXPOSE 5000:5000
 
 CMD [ "dotnet", "run" ]
+RUN cat ~/my_password.txt | docker login --username butterflyjuicer --password-stdin
